@@ -53,8 +53,12 @@ public class MarkdownParser {
         text = text.replaceAll("\\*(.+?)\\*", "<i>$1</i>");
         text = text.replaceAll("_(.+?)_", "<i>$1</i>");
         
-        // <u>underline</u> - already in HTML format, so just leave it
-        // (or you could validate it if you want)
+        // underline already uses html so we can ignore it
+        // but we will have to add some better logic for
+        // ordered and unordered lists and future code
+        // blocks...
+        //
+        // how are we gonna do code blocks? not sure
         
         return text;
     }
