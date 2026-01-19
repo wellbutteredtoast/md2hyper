@@ -15,6 +15,8 @@ public class MarkdownParser {
             // Skipping the empty lines and comments
             if (line.trim().isEmpty() || line.trim().startsWith("<!--")) {
                 continue;
+            } else if (line.trim().startsWith("-->")) {
+                continue;
             }
 
             // Checks for headers '#' '##' '###' '####'
