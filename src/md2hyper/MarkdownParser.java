@@ -7,8 +7,6 @@ import java.util.List;
 
 public class MarkdownParser {
 
-    public MarkdownParser() {}
-
     public Document parse(Path inputPath) throws IOException {
         Document doc = new Document();
         List<String> lines = Files.readAllLines(inputPath);
